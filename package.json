@@ -1,0 +1,33 @@
+{
+  "name": "adalo-localize",
+  "description": "Adds support for reading localization information in Adalo",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "Steven McKeown",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "Adalo Localize",
+    "components": [
+      {
+        "name": "Localization",
+        "manifest": "./src/components/Localization/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.43",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "react-native-localize": "^2.1.5"
+  }
+}

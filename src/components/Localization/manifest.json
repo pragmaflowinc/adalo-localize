@@ -1,0 +1,96 @@
+{
+  "displayName": "Localization",
+  "defaultWidth": 1,
+  "defaultHeight": 1,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "availableLanguages",
+      "displayName": "List of available languages",
+      "type": "list"
+    },
+    {
+      "name": "availableLanguageCodes",
+      "displayName": "Language Code Field",
+      "type": "text",
+      "role": "listItem",
+      "reference": "availableLanguages",
+      "helpText": "To see what a language code is, refer to [here](http://www.lingoes.net/en/translator/langcode.htm)"
+    },
+    {
+      "name": "fallbackLanguage",
+      "displayName": "Language code to use if there are no matches",
+      "type": "text",
+      "default": "en-US",
+      "helpText": "To see what a language code is, refer to [here](http://www.lingoes.net/en/translator/langcode.htm)"
+    },
+    {
+      "name": "fallbackRTL",
+      "displayName": "is the default a Right-to-Left language?",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "callback",
+      "displayName": "Triggered when localization information is received",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "text",
+          "displayName": "First language"
+        },
+        {
+          "type": "text",
+          "displayName": "Best language"
+        },
+        {
+          "type": "boolean",
+          "displayName": "Is RTL?"
+        },
+        {
+          "type": "text",
+          "displayName": "Decimal separator"
+        },
+        {
+          "type": "text",
+          "displayName": "Grouping separator"
+        },
+        {
+          "type": "text",
+          "displayName": "Prefered currency"
+        },
+        {
+          "type": "text",
+          "displayName": "Country"
+        },
+        {
+          "type": "text",
+          "displayName": "Calendar (gregoria, japanese, buddhist)"
+        },
+        {
+          "type": "text",
+          "displayName": "Temperature units (celsius or fahrenheit)"
+        },
+        {
+          "type": "text",
+          "displayName": "Time zone"
+        },
+        {
+          "type": "boolean",
+          "displayName": "Uses 24 hour clock"
+        },
+        {
+          "type": "boolean",
+          "displayName": "Uses the metric system?"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "displayName": "Color",
+      "type": "color",
+      "default": "#00A898"
+    }
+  ]
+}
