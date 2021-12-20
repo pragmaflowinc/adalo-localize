@@ -22,7 +22,7 @@
       "name": "fallbackLanguage",
       "displayName": "Language code to use if there are no matches",
       "type": "text",
-      "default": "en-US",
+      "default": "en",
       "helpText": "To see what a language code is, refer to [here](http://www.lingoes.net/en/translator/langcode.htm)"
     },
     {

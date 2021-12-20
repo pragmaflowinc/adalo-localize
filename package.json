@@ -1,7 +1,7 @@
 {
   "name": "adalo-localize",
   "description": "Adds support for reading localization information in Adalo",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
